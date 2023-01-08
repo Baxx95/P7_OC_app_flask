@@ -1,11 +1,4 @@
 Flask
-gunicorn
-itsdangerous
-Jinja2
-MarkupSafe
-Werkzeug
-numpy
-scipy
-scikit-learn
 pandas
-
+joblib
+xgboost==1.4.2
