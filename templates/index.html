@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+  </head>
+
+  <body>
+  <div>
+    <h1>Predict score octroi credit</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="gender" placeholder="gender" required="required"/>
+          <input type="text" name="Nb_enf" placeholder="Nb_enf" required="required"/>
+          <input type="text" name="Vehicule" placeholder="Vehicule" required="required"/>
+          <input type="text" name="Propriétaire_logement" placeholder="Propriétaire_logement" required="required"/>
+          <input type="text" name="Montant_revenu" placeholder="Montant_revenu" required="required"/>
+          <input type="text" name="Montant_credit" placeholder="Montant_credit" required="required"/>
+          <input type="text" name="DAYS_BIRTH" placeholder="DAYS_BIRTH" required="required"/>
+          <input type="text" name="Montant_Rente" placeholder="Montant_Rente" required="required"/>
+      
+          <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+  </div>
+
+  </body>
+
+</html>
